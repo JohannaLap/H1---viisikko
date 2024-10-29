@@ -40,7 +40,7 @@ Tässä myös esimerkki tiedostopolun poistamisesta:
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/file%20managed%20absent.png)
 
 Tässä esimerkki apache2 katsomisesta. Kuvasta näkyy, että apache2 on jo käynnissä onnistuneesti.
-![kuvateksti](https://github.com/JohannaLap/H1---viisikko/commit/90a586dfcaa6d7dd5afcdaa2c1bd4e04ba7a9f3b)
+![tekstiä](https://github.com/JohannaLap/H1---viisikko/blob/main/Apache%20running.png)
 
 Komennolla saadaan lisättyä uusi käyttäjä. Tässä kuvassa nähdään että käyttäjä on jo olemassa, eikä muutoksia tarvinnut siis tehdä. 
 `sudo salt-call --local state.single user.present name=johanna`
