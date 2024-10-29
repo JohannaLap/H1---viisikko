@@ -16,23 +16,24 @@ Tarkistin mikä versio on käytössä `sudo salt-call --version`.
 ## c) Viisi tärkeintä
 Saltin viisi tärkeintä tilafunktiota: pkg, file, service, user ja cmd.
 
-`sudo salt-call --local -l info state.single pkg.installed tree` 
 Tämä näyttää, että paketti tree asennettiin onnistuneesti
+`sudo salt-call --local -l info state.single pkg.installed tree` 
 
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/pkg.installed.png)
 
+Vastaavasti tällä komennolla saatiin tieto, että paketti tree on poistettu.
 `sudo salt-call --local -l info state.single pkg.removed tree`
-Vastaavasti tällä komennolla saatiin tieto, että paketti tree on poistettu. 
-
+ 
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/pkg.removed.png)
 
-`sudo salt-call --local -l info state.single file.managed /tmp/moikka`
 Tällä komennolla luotiin onnistuneesti uusi tiedostopolku. Kuvasta nähdään, että tiedosto on tyhjä. 
+`sudo salt-call --local -l info state.single file.managed /tmp/moikka`
 
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/filemanaged.png)
 
-`sudo salt-call --local -l info state.single file.managed /temp/hello contents="foo" `
 Tämä puolestaan luo tiedostopolkuun temp/hello sisälle teksin foo.
+`sudo salt-call --local -l info state.single file.managed /temp/hello contents="foo" `
+
 
 Tässä myös esimerkki tiedostopolun poistamisesta: 
 
@@ -42,8 +43,9 @@ Tässä esimerkki apache2 katsomisesta. Kuvasta näkyy, että apache2 on jo käy
 
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/commit/90a586dfcaa6d7dd5afcdaa2c1bd4e04ba7a9f3b)
 
-`sudo salt-call --local state.single user.present name=johanna`
 Komennolla saadaan lisättyä uusi käyttäjä. Tässä kuvassa nähdään että käyttäjä on jo olemassa, eikä muutoksia tarvinnut siis tehdä. 
+`sudo salt-call --local state.single user.present name=johanna`
+
 
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/user%20present.png)
 
