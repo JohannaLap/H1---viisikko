@@ -65,7 +65,7 @@ Komennolla saadaan lisättyä uusi käyttäjä. Tässä kuvassa nähdään että
 
 Tässä vielä toinen esimerkki, jossa näkyy uuden käyttäjän lisääminen, jota ei vielä ole olemassa.
 
-![kuvateksti] (https://github.com/JohannaLap/H1---viisikko/blob/main/single%20user%20present.png)
+![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/single%20user%20present.png)
 
 Ja vielä esimerkki käyttäjän poistamisesta
 
