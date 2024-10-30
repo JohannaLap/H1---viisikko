@@ -1,5 +1,20 @@
 # H1---viisikko
 ## X) Tiivistelmä
+Tärkeimpiä funktioita ovat pkg, file, service, user ja cmd. 
+Ennen saltin asennust on hyvä muistaa päivittää `sudo apt-get update` .
+Päivitttämsien jälkeen saltin asennus on helppo tehdä komennolla `sudo apt-get -y install salt-minion`
+Komennoilla `salt-call --local` voidaan testata ja hallita paketteja lokaalisti.
+
+Saltstackin avulla useien tietokoneiden hallinta samanaikaisesti on mahdollista. 
+Masterin asennus tapahtuu seuraavilla komennoilla :
+ `sudo apt-get update`
+ `sudo apt-get -y install salt-master`
+
+Minionin asennus seuraavasti: 
+ `sudo apt-get update`
+ `sudo apt-get -y install salt-minion`
+
+ Minionin käynnistyksen jälkeen avain täytyy hyväksyä. Ja lopuksi on hyvä testata että yhteys masterin ja minionin välillä toimii toivotusti. 
 
 ## b) Saltin asennus
 Ensiksi päivitin  `sudo apt-get update`.
@@ -66,6 +81,12 @@ Idempotentilla tarkoitetaan komennon antavan aina saman lopputuloksen. Lopputulo
 ![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/idempotentti.png)
 
 ## e) Herra-orja
-Tässä testi pigillä
-![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/yhteystestiping.png)
+
+![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/whoami.png)
+
+![kuvateksti](https://github.com/JohannaLap/H1---viisikko/blob/main/testi.png)
+
+
+Lähteet: Karvinen, 2023: Run Salt Command Locally. https://terokarvinen.com/2021/salt-run-command-locally/
+         Karvinen, 2018: Salt Quickstart-salt stack master and slave on ubuntu linux. https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-    slave-on-ubuntu-linux/
 
